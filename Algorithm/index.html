@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithm visualiser</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="array-container">
+      <h1 class="h1-text">Sorting visualiser</h1>
+      <div class="header">
+        <div class="btn">
+          <button id="mergeSort">Merge sort</button>
+          <button id="selectionSort">Selection sort</button>
+          <button id="bubbleSort">Bubble sort</button>
+          <button id="insertionSort">Insertion sort</button>
+          <button id="quickSort">Quick sort</button>
+        </div>
+        <hr>
+        <label for="size">Size of array:</label>
+        <input id="size" name="text" type="text" />
+        <button id="generateArray">Genrate Array</button>
+    </div>
+   
+    <script src="app.js"></script>
+
+    <div id="footer">
+  
+ copyright&copy; <span id="year"></span>
+  </div>
+<div id="message">
+
+</div>
+  </body>
+     <script>
+        var date = new Date().getFullYear();
+document.getElementById("year").innerHTML = date;
+     </script>
+
+</html>
